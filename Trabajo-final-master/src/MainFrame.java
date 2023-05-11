@@ -291,6 +291,9 @@ public class MainFrame extends JFrame{
                             prioridad = 3;
                         }
                         printder.setText(puerto.muestraBasePrioridad(prioridad));
+                        if (puerto.muestraBasePrioridad(prioridad).equals("")){
+                            printder.setText("No hay contenedores con esta prioridad");
+                        }
                         break;
                 }
             }
